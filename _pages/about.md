@@ -2,9 +2,14 @@
 permalink: /
 title: "Shaurabh Anand"
 author_profile: true
+header:
+  overlay_image: /images/bonnet_custard_apple.jpg
+  overlay_filter: 0.45
+  caption: "Bonnet macaque with a custard apple"
 redirect_from: 
   - /about/
   - /about.html
+
 ---
 
 I am an Assistant Professor in the School of Development at Azim Premji University, Bengaluru, where I teach in the MA in Development programme.
@@ -13,12 +18,11 @@ My research is about landscapes that people and other animals occupy at the same
 
 Methodologically the work runs from focal and scan sampling of habituated primate groups, through household surveys and archival material, to district- and village-level spatial analysis.
 
-Before joining Azim Premji University in 2023, I completed a PhD at the National Institute of Advanced Studies, Bangalore, and worked at the World Resources Institute India. I am currently a working group member at the Foundation for Ecological Security.
+Before joining Azim Premji University in 2023, I completed a PhD at the National Institute of Advanced Studies, Bangalore, and worked at the World Resources Institute India. 
 
 Current work
 ======
 - Bonnet macaque behaviour and social networks in a plantation-agriculture mosaic in southern Karnataka
-- Community Forest Rights implementation in Kalahandi district, Odisha
 - The status and condition of commons in India, using administrative and satellite data
 - Village-level deprivation and market access across selected Indian states
 
