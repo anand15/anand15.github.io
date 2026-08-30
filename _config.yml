@@ -15,7 +15,7 @@ name                     : &name "Shaurabh Anand"
 description              : &description "Research on human-primate shared landscapes, the political ecology of land and commons, and environmental histories of wildlife governance in India."
 url                      : https://anand15.github.io # The base hostname & protocol for your site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "GITHUB_USERNAME/GITHUB_USERNAME.github.io"
+repository               : "anand15/anand15.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
