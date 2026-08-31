@@ -28,11 +28,11 @@ author:
   bio              : "Assistant Professor, School of Development"
   location         : "Bengaluru, India"
   employer         : "Azim Premji University"
-  uri              : # URL
+  uri              : "https://azimpremjiuniversity.edu.in/people/shaurabh-anand"
   email            : "shaurabh.anand@apu.edu.in"
 
   # Academic websites
-  academia         : "https://azimpremjiuniversity.edu.in/people/shaurabh-anand"
+  academia         : # URL
   arxiv            : # URL
   googlescholar    : "https://scholar.google.com/citations?user=ybaP9bQAAAAJ"
   inspire-hep      : # URL

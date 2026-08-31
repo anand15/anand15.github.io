@@ -354,4 +354,12 @@ blockquote {
   .author__bio { font-size: 0.85em; margin-bottom: 0.5em; line-height: 1.45; }
   .author__urls li { padding: 0.16em 0; font-size: 0.8em; }
 }
-
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    height: auto;
+    max-height: calc(100vh - 90px);
+  }
+  .author__avatar img { max-width: 120px; }
+  .author__urls li { padding: 0.18em 0; font-size: 0.82em; }
+  .author__bio { margin-bottom: 0.5em; }
+}
