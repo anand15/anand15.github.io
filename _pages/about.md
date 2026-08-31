@@ -2,10 +2,6 @@
 permalink: /
 title: "Shaurabh Anand"
 author_profile: true
-header:
-  overlay_image: bonnet-custard-apple.jpg
-  overlay_filter: 0.4
-  caption: "Bonnet macaque with a custard apple, southern Karnataka"
 redirect_from:
   - /about/
   - /about.html

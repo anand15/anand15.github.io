@@ -1,33 +1,33 @@
 /* ==========================================================================
-   Custom overrides — typography, colour, spacing
-   Loaded after main.css. Edit this file, not the theme _sass files.
+   Custom overrides — colour and typography only.
+   No layout changes. Loaded after main.css.
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
    1. Palette
    -------------------------------------------------------------------------- */
 :root {
-  --ink              : #23262a;
-  --ink-soft         : #55595e;
-  --ink-faint        : #8a8f95;
-  --paper            : #fdfcfa;
-  --rule             : #e3e0da;
-  --accent           : #8a4530;
-  --accent-hover     : #66301f;
+  --ink          : #23262a;
+  --ink-soft     : #55595e;
+  --ink-faint    : #8a8f95;
+  --paper        : #fdfcfa;
+  --rule         : #e3e0da;
+  --accent       : #8a4530;
+  --accent-hover : #66301f;
 
-  --global-bg-color              : var(--paper);
-  --global-text-color            : var(--ink);
-  --global-text-color-light      : var(--ink-faint);
-  --global-base-color            : var(--accent);
-  --global-link-color            : var(--accent);
-  --global-link-color-hover      : var(--accent-hover);
-  --global-link-color-visited    : var(--accent);
-  --global-border-color          : var(--rule);
-  --global-dark-border-color     : var(--rule);
-  --global-masthead-link-color   : var(--ink);
+  --global-bg-color                  : var(--paper);
+  --global-text-color                : var(--ink);
+  --global-text-color-light          : var(--ink-faint);
+  --global-base-color                : var(--accent);
+  --global-link-color                : var(--accent);
+  --global-link-color-hover          : var(--accent-hover);
+  --global-link-color-visited        : var(--accent);
+  --global-border-color              : var(--rule);
+  --global-dark-border-color         : var(--rule);
+  --global-masthead-link-color       : var(--ink);
   --global-masthead-link-color-hover : var(--accent);
-  --global-footer-bg-color       : var(--paper);
-  --global-thead-color           : #f3f0ea;
+  --global-footer-bg-color           : var(--paper);
+  --global-thead-color               : #f3f0ea;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,99 +40,59 @@
     --accent       : #d99070;
     --accent-hover : #eeb094;
 
-    --global-bg-color              : var(--paper);
-    --global-text-color            : var(--ink);
-    --global-text-color-light      : var(--ink-faint);
-    --global-base-color            : var(--accent);
-    --global-link-color            : var(--accent);
-    --global-link-color-hover      : var(--accent-hover);
-    --global-link-color-visited    : var(--accent);
-    --global-border-color          : var(--rule);
-    --global-dark-border-color     : var(--rule);
-    --global-masthead-link-color   : var(--ink);
+    --global-bg-color                  : var(--paper);
+    --global-text-color                : var(--ink);
+    --global-text-color-light          : var(--ink-faint);
+    --global-base-color                : var(--accent);
+    --global-link-color                : var(--accent);
+    --global-link-color-hover          : var(--accent-hover);
+    --global-link-color-visited        : var(--accent);
+    --global-border-color              : var(--rule);
+    --global-dark-border-color         : var(--rule);
+    --global-masthead-link-color       : var(--ink);
     --global-masthead-link-color-hover : var(--accent);
-    --global-footer-bg-color       : var(--paper);
-    --global-thead-color           : #22262a;
+    --global-footer-bg-color           : var(--paper);
+    --global-thead-color               : #22262a;
   }
 }
 
 /* --------------------------------------------------------------------------
    2. Typography
    -------------------------------------------------------------------------- */
-html { font-size: 17px; }
-
 body,
 .page__content,
 .archive__item-excerpt,
 .page__footer {
   font-family: "Source Serif 4", Georgia, serif;
-  color: var(--global-text-color);
-  -webkit-font-smoothing: antialiased;
   font-variant-numeric: lining-nums tabular-nums;
+  -webkit-font-smoothing: antialiased;
 }
 
 .page__content p,
 .page__content li {
-  line-height: 1.62;
-}
-
-.page__content p {
-  max-width: 40em;
-  margin-bottom: 1.15em;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6,
 .page__title,
 .archive__item-title,
-.masthead,
+.site-title,
 .greedy-nav,
 .author__name,
 .author__urls,
-.sidebar {
+.page__meta {
   font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Page title */
-.page__title {
-  font-size: 2.1em;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  line-height: 1.15;
-  color: var(--ink);
-  margin-bottom: 0.6em;
-  border-bottom: none;
+.author__bio {
+  font-family: "Source Serif 4", Georgia, serif;
 }
 
-/* Section headings — markdown "======" renders as h1 inside content */
-.page__content h1 {
-  font-size: 1.05em;
-  font-weight: 600;
-  letter-spacing: 0.09em;
+.greedy-nav a {
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--ink-soft);
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 0.5em;
-  margin: 2.8em 0 1.1em;
+  font-size: 0.85em;
 }
-
-.page__content h2 {
-  font-size: 1.35em;
-  font-weight: 600;
-  letter-spacing: -0.005em;
-  color: var(--ink);
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 0.4em;
-  margin: 2.4em 0 1em;
-}
-
-.page__content h3 {
-  font-size: 1.1em;
-  font-weight: 600;
-  color: var(--ink);
-  margin: 2em 0 0.7em;
-}
-
-.page__content hr { display: none; }
 
 /* --------------------------------------------------------------------------
    3. Links
@@ -141,7 +101,6 @@ h1, h2, h3, h4, h5, h6,
   color: var(--accent);
   text-decoration: none;
   border-bottom: 1px solid rgba(138, 69, 48, 0.28);
-  transition: border-color 0.15s ease, color 0.15s ease;
 }
 .page__content a:hover {
   color: var(--accent-hover);
@@ -151,215 +110,4 @@ h1, h2, h3, h4, h5, h6,
   .page__content a { border-bottom-color: rgba(217, 144, 112, 0.35); }
 }
 
-/* --------------------------------------------------------------------------
-   4. Masthead and navigation
-   -------------------------------------------------------------------------- */
-.masthead {
-  border-bottom: 1px solid var(--rule);
-  background: var(--paper);
-}
-
-.masthead__inner-wrap { padding: 1.1em 1em; }
-
-.site-title {
-  font-weight: 600;
-  font-size: 1.05em;
-  letter-spacing: 0.01em;
-}
-
-.greedy-nav { background: transparent; }
-
-.greedy-nav a {
-  font-size: 0.82em;
-  font-weight: 500;
-  letter-spacing: 0.055em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-}
-.greedy-nav a:hover { color: var(--accent); }
-
-.greedy-nav .visible-links a:before { background: var(--accent); height: 2px; }
-
-/* --------------------------------------------------------------------------
-   5. Author sidebar
-   -------------------------------------------------------------------------- */
-.author__avatar img {
-  border-radius: 50%;
-  max-width: 150px;
-  border: 1px solid var(--rule);
-  padding: 0;
-}
-
-.author__name {
-  font-size: 1.15em;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  margin-bottom: 0.2em;
-}
-
-.author__bio {
-  font-family: "Source Serif 4", Georgia, serif;
-  font-size: 0.9em;
-  line-height: 1.5;
-  color: var(--ink-soft);
-}
-
-.author__urls-wrapper button {
-  border-color: var(--rule);
-  color: var(--ink-soft);
-}
-
-.author__urls li {
-  font-size: 0.85em;
-  padding: 0.28em 0;
-  border: none;
-}
-
-.author__urls a {
-  color: var(--ink-soft);
-  text-decoration: none;
-}
-.author__urls a:hover { color: var(--accent); text-decoration: none; }
-
-.author__urls .fa,
-.author__urls .fas,
-.author__urls .fab,
-.author__urls .ai {
-  color: var(--ink-faint);
-  width: 1.4em;
-}
-
-/* --------------------------------------------------------------------------
-   6. Archive lists (publications, talks, teaching)
-   -------------------------------------------------------------------------- */
-.archive__item {
-  padding-bottom: 1.5em;
-  margin-bottom: 1.5em;
-  border-bottom: 1px solid var(--rule);
-}
-
-.archive__item:last-child { border-bottom: none; }
-
-.archive__item-title {
-  font-size: 1.08em;
-  font-weight: 600;
-  line-height: 1.35;
-  margin-top: 0;
-  margin-bottom: 0.35em;
-  border-bottom: none;
-}
-
-.archive__item-title a {
-  color: var(--ink);
-  text-decoration: none;
-  border-bottom: none;
-}
-.archive__item-title a:hover { color: var(--accent); }
-
-.archive__item-excerpt {
-  font-size: 0.92em;
-  line-height: 1.55;
-  color: var(--ink-soft);
-  margin-bottom: 0.4em;
-}
-
-/* Venue / date line that academicpages prints under titles */
-.archive__item p em,
-.page__meta {
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 0.8em;
-  font-style: normal;
-  letter-spacing: 0.03em;
-  color: var(--ink-faint);
-}
-
-/* CV page publication list */
-.page__content ul li { margin-bottom: 0.45em; line-height: 1.55; }
-
-/* --------------------------------------------------------------------------
-   7. Footer
-   -------------------------------------------------------------------------- */
-.page__footer {
-  background: var(--paper);
-  border-top: 1px solid var(--rule);
-  color: var(--ink-faint);
-  font-size: 0.85em;
-}
-.page__footer a { color: var(--ink-faint); }
-.page__footer a:hover { color: var(--accent); }
-.page__footer footer { padding-top: 1.5em; }
-
-/* --------------------------------------------------------------------------
-   8. Misc
-   -------------------------------------------------------------------------- */
-blockquote {
-  border-left: 3px solid var(--accent);
-  font-style: normal;
-  color: var(--ink-soft);
-}
-
-.page__content table { font-size: 0.9em; }
-
-.notice, .notice--info, .notice--warning { border-radius: 2px; }
-
 ::selection { background: rgba(138, 69, 48, 0.15); }
-
-
-//* --------------------------------------------------------------------------
-   9. Hero banner — clear the fixed sidebar, give it height
-   -------------------------------------------------------------------------- */
-@media screen and (min-width: 1024px) {
-  .page__hero--overlay {
-    min-height: 360px;
-    display: flex;
-    align-items: center;
-  }
-  .page__hero--overlay .wrapper {
-    padding-left: 22%;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .page__hero--overlay .wrapper {
-    padding-left: 295px;
-  }
-}
-
-.page__hero--overlay .page__title {
-  font-size: 2.4em;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
-}
-
-.page__hero--overlay .wrapper .page__lead,
-.page__hero--overlay .page__meta { display: none; }
-
-.page__hero-caption {
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 0.72em;
-  letter-spacing: 0.02em;
-}
-
-/* --------------------------------------------------------------------------
-   10. Sidebar — fit all links above the fold
-   -------------------------------------------------------------------------- */
-@media screen and (min-width: 1024px) {
-  .sidebar {
-    height: auto;
-    max-height: calc(100vh - 90px);
-  }
-  .author__avatar img { max-width: 118px; }
-  .author__name { font-size: 1.05em; margin-bottom: 0.15em; }
-  .author__bio { font-size: 0.85em; margin-bottom: 0.5em; line-height: 1.45; }
-  .author__urls li { padding: 0.16em 0; font-size: 0.8em; }
-}
-@media screen and (min-width: 1024px) {
-  .sidebar {
-    height: auto;
-    max-height: calc(100vh - 90px);
-  }
-  .author__avatar img { max-width: 120px; }
-  .author__urls li { padding: 0.18em 0; font-size: 0.82em; }
-  .author__bio { margin-bottom: 0.5em; }
-}
