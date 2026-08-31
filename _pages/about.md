@@ -3,7 +3,7 @@ permalink: /
 title: "Shaurabh Anand"
 author_profile: true
 header:
-  overlay_image: bonnet_custard_apple.jpg
+  overlay_image: bonnet-custard-apple.jpg
   overlay_filter: 0.45
   caption: "Bonnet macaque with a custard apple"
 redirect_from: 
