@@ -2,15 +2,14 @@
 permalink: /
 title: "Shaurabh Anand"
 author_profile: true
+header:
+  overlay_image: bonnet-custard-apple.jpg
+  overlay_filter: 0.4
+  caption: "Bonnet macaque with a custard apple, southern Karnataka"
 redirect_from:
   - /about/
   - /about.html
 ---
-
-<figure class="lead-figure">
-  <img src="/images/bonnet-custard-apple.jpg" alt="Bonnet macaque feeding on a custard apple at a plantation edge, southern Karnataka">
-  <figcaption>Bonnet macaque with a custard apple, southern Karnataka.</figcaption>
-</figure>
 
 I am an Assistant Professor in the School of Development at Azim Premji University, Bengaluru, where I teach in the MA in Development programme.
 

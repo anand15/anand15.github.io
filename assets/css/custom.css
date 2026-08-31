@@ -305,33 +305,53 @@ blockquote {
 ::selection { background: rgba(138, 69, 48, 0.15); }
 
 
-/* --------------------------------------------------------------------------
-   9. Lead image (landing page)
+//* --------------------------------------------------------------------------
+   9. Hero banner — clear the fixed sidebar, give it height
    -------------------------------------------------------------------------- */
-.lead-figure {
-  margin: 0 0 2.2em;
+@media screen and (min-width: 1024px) {
+  .page__hero--overlay {
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+  }
+  .page__hero--overlay .wrapper {
+    padding-left: 22%;
+  }
 }
 
-.lead-figure img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  object-position: center 60%;
-  display: block;
-  border-radius: 2px;
+@media screen and (min-width: 1280px) {
+  .page__hero--overlay .wrapper {
+    padding-left: 295px;
+  }
 }
 
-.lead-figure figcaption {
+.page__hero--overlay .page__title {
+  font-size: 2.4em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
+}
+
+.page__hero--overlay .wrapper .page__lead,
+.page__hero--overlay .page__meta { display: none; }
+
+.page__hero-caption {
   font-family: "Source Sans 3", sans-serif;
-  font-size: 0.78em;
+  font-size: 0.72em;
   letter-spacing: 0.02em;
-  color: var(--ink-faint);
-  margin-top: 0.55em;
-  text-align: left;
-  line-height: 1.4;
 }
 
-@media screen and (max-width: 600px) {
-  .lead-figure img { height: 200px; }
+/* --------------------------------------------------------------------------
+   10. Sidebar — fit all links above the fold
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    height: auto;
+    max-height: calc(100vh - 90px);
+  }
+  .author__avatar img { max-width: 118px; }
+  .author__name { font-size: 1.05em; margin-bottom: 0.15em; }
+  .author__bio { font-size: 0.85em; margin-bottom: 0.5em; line-height: 1.45; }
+  .author__urls li { padding: 0.16em 0; font-size: 0.8em; }
 }
 
