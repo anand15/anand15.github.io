@@ -13,8 +13,8 @@ main:
   - title: "Talks"
     url: /talks/
 
-  - title: "Writing"
-    url: /year-archive/
+  - title: "MountainSpeaks"
+    url: https://mountainspeaks.substack.com/
 
   - title: "CV"
     url: /cv/
